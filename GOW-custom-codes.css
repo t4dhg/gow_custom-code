@@ -1,0 +1,243 @@
+
+/* ---------- */
+/* CUSTOM GOW */
+/* ---------- */
+
+/* Give colors lower contrast */
+/* Disminuir el contraste de los colores */
+
+.invert,
+.gow_invert {
+  -webkit-filter: invert(25%);
+  filter: invert(25%);
+  }
+
+/* Convertir foto en b&n */
+
+.gow_wb-image {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+/* Convertir los <p> en mas grande para texto que lleva al Help Center */
+/* Es un FIX, porque los h4 se ven muy distinto en desktop y mobile */
+
+.gow_helpcenter-p-style,
+.helpcenter-p-style {
+    text-align: center;
+    /*font-family: 'Montserrat', 'Sans Serif';*/
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Animation button palpitando */
+
+.gow_palpitar,
+.animation-palpitar {
+  animation:
+    pulse 1s ease infinite alternate,
+    nudge 2s linear infinite alternate;
+}
+
+/* Este clase hace que cualquier elemento se oculte en mobile */
+
+@media only screen and (max-width: 768px) {
+    .gow_hid-in-mobile,
+    .hid-in-mobile {
+        display: none;
+    }
+}
+
+/* Aumentar los titulos de producto */
+.gow_product-title-link,
+.product-title-link {
+    font-size: 20px;
+}
+
+
+/* ------- */
+/* LAYOUT  */
+/* ------- */
+
+/* Shopkeeper 1.0: When screen bigger than mobile, erase margin from header */
+
+@media only screen and (min-width: 63.9375em) {
+    .page-template-default .transparent_header .entry-header.with_featured_img, .page-template-page-full-width .transparent_header .entry-header.with_featured_img {
+        margin-top: initial;
+    }
+}
+
+/* Shopkeeper 1.0: Erase padding from header */
+
+.page-template-default .transparent_header .entry-header.with_featured_img, .page-template-page-full-width .transparent_header .entry-header.with_featured_img {
+    padding: 0;
+}
+
+/* Shopkeeper 2.0: disminuir el espacio blanco que hay entre el contenido y el menu*/
+
+.content-area {
+    padding-top: 0;
+}
+
+/* ----------------------- */
+/* MENUS a.k.a. NAVIGATION */
+/* ----------------------- */
+
+
+/* Navigation: quitar espacio blanco*/
+
+.entry-meta {
+      margin-top: 0;
+}
+
+#primary {
+    padding-top: 0;
+}
+
+/* Cambiar color de los links off canvas */
+
+.mobile-navigation a {
+    color: #;
+}
+
+/* ------- */
+/* CONTENT */
+/* ------- */
+
+/* make all image captions custom color */
+/* poner un color a las descripciones de imagen */
+
+figcaption {
+    color: ;
+}
+
+
+/* Change size of template's "small" font size */
+/* Cambiar el tamaño del texto "small" de la plantilla  */
+
+small {
+  font-size: ;
+}
+
+.page-title {
+    margin-bottom: 0px;
+}
+
+/* Cambiar el texto con el precio del modulo "add to card" de woocommerce */
+
+.wpb_wrapper .add_to_cart_inline .amount {
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: ;
+}
+
+/* Hacer que el módulo add to cart no se solape cuando hay varios horizontalmente dispuestos */
+
+.wpb_wrapper .add_to_cart_inline .add_to_cart_button,
+.wpb_wrapper .add_to_cart_inline .added_to_cart_button {
+    min-width: inherit;
+    max-width: 100%;
+}
+
+
+/* -------------- */
+/* PRODUCTS PAGES */
+/* -------------- */
+
+/* Eliminar las pestañas con "más infomación" de las páginas de producto */
+
+.woocommerce-tabs {
+  display: none;
+}
+
+/* Cambiar el color de la pestaña de reviews */
+
+.woocommerce #content div.product .woocommerce-tabs ul li.reviews_tab a {
+    color: thistle;
+}
+
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li.reviews_tab.active a {
+    color: thistle;
+}
+
+/* Hacer que el contenido de los tabs (descripciones, reviews... ocupen 100% de ancho */
+
+@media only screen and (min-width: 80em) {
+    .xlarge-6 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    .xlarge-6 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 71em) {
+    .product_summary_top {
+        padding-top: 20px;
+    }
+}
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+/* Mejorar la estética del widget con los logos de las formas de pago */
+
+.widget_text {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.site-footer-widget-area {
+    margin-bottom: 20px;
+}
+
+.site-footer-widget-area>.row {
+    /*border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(221, 221, 221);*/
+    border-style: hidden;
+}
+
+/* footer social icons bigger */
+
+.footer_socials_wrapper li {
+    display: inline-block;
+    font-size: ;
+    margin: ;
+}
+
+#site-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Mejorar la estética del language selector del footer */
+
+.wpml-ls-statics-footer .wpml-ls-current-language>a {
+    font-weight: 700;
+}
+
+.wpml-ls-legacy-list-horizontal,
+.wpml-ls-item {
+    list-style-type: none;
+    font-size: 1em;
+    font-family: ;
+    margin-bottom: 0;
+    /*background-color: rgb(244, 244, 244);*/
+}
+
+.wpml-ls-legacy-list-horizontal.wpml-ls-statics-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+
+#site-footer {
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
